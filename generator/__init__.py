@@ -1,6 +1,6 @@
 """
 Generate images using DALLE-3
-Author: Son Phat Tran
+Author: Duy Khanh Ta
 """
 import os
 from dotenv import load_dotenv

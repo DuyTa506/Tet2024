@@ -32,5 +32,7 @@ python new_year.py
 ```
 
 Để random seed thấp thôi nhé , mình đang để 42 nên hơi nhiều đấy :v
+
 Bấm q để chuyển ảnh nhé !!
-Chúc bạn có những khoảnh khắc vui vẻ và ý nghĩa với dự án Tết Khai Code này! 🎉
+
+#### Chúc bạn có những khoảnh khắc vui vẻ và ý nghĩa với dự án Tết Khai Code này! 🎉

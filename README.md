@@ -24,11 +24,13 @@ Sử dụng DALL-E của OpenAI thì các bạn trước tiên lấy api key tr�
 python main.py
 ```
 
+
 Funny một tí thì chạy típ hàm này để hiển thị lời chúc random với ảnh vừa tạo, bạn có thể modify lại hàm output lời chúc ở tet.txt, nhớ để cả câu chúc một dòng nhé :> . Sau đó run bằng lệnh
 
 ```bash
 python new_year.py
 ```
 
+Để random seed thấp thôi nhé , mình đang để 42 nên hơi nhiều đấy :v
 Bấm q để chuyển ảnh nhé !!
 Chúc bạn có những khoảnh khắc vui vẻ và ý nghĩa với dự án Tết Khai Code này! 🎉

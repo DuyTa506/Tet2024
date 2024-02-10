@@ -1,7 +1,8 @@
+import os
 import random
 import time
 import cv2
-import os
+from pathlib import Path
 
 rand_seed = 42
 
@@ -18,21 +19,24 @@ def open_random_image(folder_path, display_duration=1):
     image_files = [f for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f))]
     if image_files:
         selected_image = random.choice(image_files)
-        image_path = os.path.join(folder_path, selected_image)
+        image_path = Path(folder_path) / selected_image
 
-        image = cv2.imread(image_path)
+        image = cv2.imread(str(image_path))
 
-        height, width, _ = image.shape
+        if image is not None:
+            height, width, _ = image.shape
 
-        cv2.namedWindow('Random Image', cv2.WINDOW_NORMAL)
-        cv2.resizeWindow('Random Image', int(width/1.5), int(height/1.5))
+            cv2.namedWindow('Random Image', cv2.WINDOW_NORMAL)
+            cv2.resizeWindow('Random Image', int(width/1.5), int(height/1.5))
 
-        cv2.imshow('Random Image', image)
-        cv2.waitKey(0)
+            cv2.imshow('Random Image', image)
+            cv2.waitKey(0)
 
-        time.sleep(display_duration)
+            time.sleep(display_duration)
 
-        cv2.destroyAllWindows()
+            cv2.destroyAllWindows()
+        else:
+            print("Error reading the image.")
     else:
         print("Hết ảnh fence ơi.")
 

@@ -40,7 +40,9 @@ def open_random_image(folder_path, display_duration=1):
     else:
         print("Hết ảnh fence ơi.")
 
-image_folder_path = 'E:/AI_Project/langchain/dalle3-tet-image-generator/images'
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+image_folder_path = os.path.join(ROOT, "images")
 
 for i in range(rand_seed):
     seed_child = random.choice(data_list)
